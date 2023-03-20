@@ -6,10 +6,10 @@ import { navLinks } from "../constants";
 const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
-
+  const refresh = () => window.location.reload(true)
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
-      <img src={logo} alt="GitBuddies" className="w-[200px]" />
+      <img src={logo} alt="GitBuddies" className="w-[200px]" onClick={refresh} />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (

@@ -62,25 +62,25 @@ export const feedback = [
   {
     id: "feedback-1",
     content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
-    name: "Herman Jensen",
-    title: "Founder & Leader",
+      "This site is great for followers and likes because you can get so much stuff and all of the things actually work!",
+    name: "Angelica",
+    title: "Open Source Developer",
     img: people01,
   },
   {
     id: "feedback-2",
     content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
+      "I had never thought to become an Open Source celebrity having GitBuddies, getting free Github followers, and watching the contributions increasing.",
     name: "Steve Mark",
-    title: "Founder & Leader",
+    title: "Software Engineer",
     img: people02,
   },
   {
     id: "feedback-3",
     content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
-    name: "Kenn Gallagher",
-    title: "Founder & Leader",
+      "GitBuddies Helped me boost my followers in just few days. Everyone who wants to increase their followers instantly then this is worth a check.",
+    name: "Richard M.",
+    title: "Quality Assurance",
     img: people03,
   },
 ];

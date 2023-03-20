@@ -1,45 +1,99 @@
-import { apple, bill, google } from "../assets";
-import styles, { layout } from "../styles";
+import { createStyles, Container, Text, Button, Group, rem, Grid, Skeleton} from '@mantine/core';
+import { GithubIcon } from '@mantine/ds';
+import FeaturesCard from './Card';
 
-const Billing = () => (
-  <section id="product" className={layout.sectionReverse}>
-    <div className={layout.sectionImgReverse}>
-      <img
-        src={bill}
-        alt="billing"
-        className="w-[100%] h-[100%] relative z-[5]"
-      />
+const useStyles = createStyles((theme) => ({
+  wrapper: {
+    position: 'relative',
+    boxSizing: 'border-box',
+  },
 
-      {/* gradient start */}
-      <div className="absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full white__gradient" />
-      <div className="absolute z-[0] w-[50%] h-[50%] -left-1/2 bottom-0 rounded-full pink__gradient" />
-      {/* gradient end */}
+  inner: {
+    position: 'relative',
+    paddingTop: rem(90),
+    paddingBottom: rem(70),
+
+    [theme.fn.smallerThan('sm')]: {
+      paddingBottom: rem(80),
+      paddingTop: rem(80),
+    },
+  },
+
+  title: {
+    fontFamily: `Greycliff CF, ${theme.fontFamily}`,
+    fontSize: rem(62),
+    fontWeight: 900,
+    lineHeight: 1.1,
+    margin: 0,
+    padding: 0,
+    color: theme.colorScheme === 'light' ? theme.white : theme.black,
+
+    [theme.fn.smallerThan('sm')]: {
+      fontSize: rem(42),
+      lineHeight: 1.2,
+    },
+  },
+
+  description: {
+    marginTop: theme.spacing.xl,
+    fontSize: rem(24),
+
+    [theme.fn.smallerThan('sm')]: {
+      fontSize: rem(18),
+    },
+  },
+
+  controls: {
+    marginTop: `calc(${theme.spacing.xl} * 2)`,
+
+    [theme.fn.smallerThan('sm')]: {
+      marginTop: theme.spacing.xl,
+    },
+  },
+
+  control: {
+    height: rem(54),
+    paddingLeft: rem(38),
+    paddingRight: rem(38),
+
+    [theme.fn.smallerThan('sm')]: {
+      height: rem(54),
+      paddingLeft: rem(18),
+      paddingRight: rem(18),
+      flex: 1,
+    },
+  },
+}));
+
+
+
+export default function Billing() {
+  const { classes } = useStyles();
+  return (
+    <div className={classes.wrapper} id={"product"}>
+      <Container size={800} className={classes.inner}>
+        <h1 className={classes.title}>
+          Take{' '}
+          <Text component="span" variant="gradient" gradient={{ from: 'blue', to: 'cyan' }} inherit>
+          Simple Steps
+          </Text>{' '}
+          To Activate Our Free Service
+        </h1>
+
+        <Text className={classes.description} color="dimmed">
+        It is simple to get targeted, high quality, free Github followers, stars, views and contributions from our network! The process takes only 2 minutes to activate a plan and here are the steps:
+        </Text>
+
+      </Container>
+      <Container my="md" size={1200}>
+      <Grid>
+        <Grid.Col xs={3}><FeaturesCard title={'Step : 1'} desc = {"Register & Login"} src={"https://cdn-icons-png.flaticon.com/512/4662/4662943.png"}/></Grid.Col>
+        <Grid.Col xs={3}><FeaturesCard title={'Step : 2'} desc = {"Activate the free plan"} src={"https://cdn-icons-png.flaticon.com/512/1913/1913633.png"}/></Grid.Col>
+        <Grid.Col xs={3}><FeaturesCard title={'Step : 3'} desc = {"Earn Diamonds"} src={"https://cdn-icons-png.flaticon.com/512/1613/1613073.png"}/></Grid.Col>
+        <Grid.Col xs={3}><FeaturesCard title={'Step : 4'} desc = {"Get Free followers"} src={"https://cdn-icons-png.flaticon.com/512/2504/2504911.png"}/></Grid.Col>
+      </Grid>
+    </Container>
+      
     </div>
-
-    <div className={layout.sectionInfo}>
-      <h2 className={styles.heading2}>
-        Easily control your <br className="sm:block hidden" /> billing &
-        invoicing
-      </h2>
-      <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Elit enim sed massa etiam. Mauris eu adipiscing ultrices ametodio aenean
-        neque. Fusce ipsum orci rhoncus aliporttitor integer platea placerat.
-      </p>
-
-      <div className="flex flex-row flex-wrap sm:mt-10 mt-6">
-        <img
-          src={apple}
-          alt="google_play"
-          className="w-[128.86px] h-[42.05px] object-contain mr-5 cursor-pointer"
-        />
-        <img
-          src={google}
-          alt="google_play"
-          className="w-[144.17px] h-[43.08px] object-contain cursor-pointer"
-        />
-      </div>
-    </div>
-  </section>
-);
-
-export default Billing;
+  );
+}

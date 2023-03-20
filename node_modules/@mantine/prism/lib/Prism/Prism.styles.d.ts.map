@@ -1,0 +1,1 @@
+{"version":3,"file":"Prism.styles.d.ts","sourceRoot":"","sources":["../../src/Prism/Prism.styles.ts"],"names":[],"mappings":"AAAA,OAAO,EAAgB,iBAAiB,EAAO,MAAM,eAAe,CAAC;AAErE,MAAM,WAAW,iBAAiB;IAChC,WAAW,EAAE,OAAO,GAAG,MAAM,CAAC;IAC9B,MAAM,EAAE,OAAO,CAAC;IAChB,WAAW,EAAE,MAAM,GAAG,MAAM,CAAC;IAC7B,MAAM,EAAE,iBAAiB,CAAC;CAC3B;;;;;;;;;;;;;;AAED,wBAoDE"}
