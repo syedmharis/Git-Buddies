@@ -12,6 +12,7 @@ const useStyles = createStyles((theme) => ({
     padding: theme.spacing.lg,
     display: "flex",
     alignItems: "center",
+    backgroundColor:"rgb(0,0,0,0.2)",
     justifyContent: "center",
     borderBottom: `${rem(3)} solid ${
       theme.colorScheme === "light"
@@ -26,6 +27,12 @@ const useStyles = createStyles((theme) => ({
         ? theme.colors.dark[4]
         : theme.colors.gray[3]
     }`,
+  },
+  card: {
+    height: '17rem',
+    backgroundImage: theme.fn.gradient({ from: '#22B8CF', to: '#1C7ED6', deg: 90 }),
+    color: theme.white,
+    
   },
 }));
 

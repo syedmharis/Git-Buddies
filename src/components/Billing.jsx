@@ -1,6 +1,7 @@
 import { createStyles, Container, Text, Button, Group, rem, Grid, Skeleton} from '@mantine/core';
 import { GithubIcon } from '@mantine/ds';
 import FeaturesCard from './Card';
+import FeedbackCard from './FeedbackCard';
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
