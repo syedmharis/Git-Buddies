@@ -26,7 +26,7 @@ const ArcsGlobe = () => {
       arcDashAnimateTime={() => Math.random() * 4000 + 500}
       width={600}
       height={650}
-      backgroundColor="#000000"
+      backgroundColor="#00040F"
     />
   );
 };
