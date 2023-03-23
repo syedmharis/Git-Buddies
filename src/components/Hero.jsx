@@ -1,13 +1,13 @@
 import styles from "../styles";
-import { discount, Octodex} from "../assets";
+import { discount, Octodex } from "../assets";
 import GetStarted from "./GetStarted";
-import DarkGlobe from "../components/DarkGlobe"
+import DarkGlobe from "../components/DarkGlobe";
 
 const Hero = () => {
   return (
     <section
       id="home"
-      className={`flex md:flex-row flex-col ${styles.paddingY}`}
+      className={`flex md:flex-row flex-col ${"sm:py-2 py-20"}`}
     >
       <div
         className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
@@ -25,29 +25,21 @@ const Hero = () => {
             Get Free <br className="sm:block hidden" />{" "}
             <span className="text-gradient">Github</span>{" "}
           </h1>
-          <div className="ss:flex hidden md:mr-4 mr-0">
-            <GetStarted />
-          </div>
         </div>
 
         <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full">
           Followers & Stars
         </h1>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Don't settle for mediocre GitHub stats - join the ranks of top developers and start boosting your Followers & Stars today!
+          Don't settle for mediocre GitHub stats - join the ranks of top
+          developers and start boosting your Followers & Stars today!
         </p>
       </div>
 
       <div
         className={`flex-3 flex ${styles.flexCenter} md:my-0 my-10 relative`}
       >
-        <DarkGlobe/>
-
-
-      </div>
-
-      <div className={`ss:hidden ${styles.flexCenter}`}>
-        <GetStarted />
+        <DarkGlobe />
       </div>
     </section>
   );
