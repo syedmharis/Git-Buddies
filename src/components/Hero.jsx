@@ -1,6 +1,7 @@
 import styles from "../styles";
 import { discount, Octodex} from "../assets";
 import GetStarted from "./GetStarted";
+import DarkGlobe from "../components/DarkGlobe"
 
 const Hero = () => {
   return (
@@ -20,7 +21,7 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-row justify-between items-center w-full">
-          <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]">
+          <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[70px]">
             Get Free <br className="sm:block hidden" />{" "}
             <span className="text-gradient">Github</span>{" "}
           </h1>
@@ -38,19 +39,11 @@ const Hero = () => {
       </div>
 
       <div
-        className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}
+        className={`flex-3 flex ${styles.flexCenter} md:my-0 my-10 relative`}
       >
-        <img
-          src={Octodex}
-          alt="billing"
-          className="w-[70%] h-[100%] relative z-[5]"
-        />
+        <DarkGlobe/>
 
-        {/* gradient start */}
-        <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
-        <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
-        <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
-        {/* gradient end */}
+
       </div>
 
       <div className={`ss:hidden ${styles.flexCenter}`}>
