@@ -17,13 +17,12 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  - [🚀 Preview](#preview)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [⭐️ Show your support](#support)
 - [📝 License](#license)
@@ -70,8 +69,15 @@
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
 - https://gitbuddies.netlify.app/
+
+## 🚀 Preview <a name="preview">
+![hero](https://user-images.githubusercontent.com/89534087/227498765-fef9afc4-e73e-4978-ab50-2ce301a3f008.png)
+![features](https://user-images.githubusercontent.com/89534087/227498792-da2a76ac-565a-4dde-b876-5bbcf6d78c4a.png)
+![steps](https://user-images.githubusercontent.com/89534087/227498732-6480cdab-69de-43bc-ba18-2b8232794861.png)
+</a>
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
